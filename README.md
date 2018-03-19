@@ -32,6 +32,6 @@ library(polyglot)
 learnDir()
 ```
 
-Go [here](https://lgnbhl.github.io/learner/) to read a blog post describing the package with more development. 
+Go [here](https://lgnbhl.github.io) to read a blog post describing the package with more development. 
 
 Happy learning!
