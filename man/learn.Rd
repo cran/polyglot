@@ -14,16 +14,14 @@ This function will launch the interactive learning environment.
 }
 \details{
 This function initializes the interactive environment by proposing to select
-a CSV file from the directory inst/extdata/. Once the file is selected, the
-function reads the selected dataset and adds a numeric variable, named
-Score, if not already existing. It also replaces any existing missing values
+a CSV file from the caching directory built with the pins package. Once the file 
+is selected, the function reads the selected dataset and adds a numeric variable, 
+named Score, if not already existing. It also replaces any existing missing values
 by 0 from the Score variable. Finally the function returns to the
 \code{\link{sessionQuestions}} function, or to the \code{\link{sessionExit}}
 function if 0 is typed.
 }
 \note{
-In order to study a new CSV file, simply save it into the inst/extdata/ directory.
-
 If you have any problem with the encoding, or if you want to read a dataset with
 an non-Latin alphabet, please type ?Sys.setlocale() and follow the instructions.
 }
@@ -32,7 +30,4 @@ if(interactive()){
 learn()
 }
 
-}
-\references{
-A blog post describing the package with more development: \url{https://lgnbhl.github.io/learner}
 }
